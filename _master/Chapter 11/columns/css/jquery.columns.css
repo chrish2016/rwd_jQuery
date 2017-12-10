@@ -1,0 +1,33 @@
+.col,
+.col * { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.col {
+  position: relative;
+  float: left;
+  padding: 0 1em;
+}
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+
+@media all and (max-width: 480px) {
+  body {background: cyan !important}
+  .col { 
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media all and (min-width: 1216px) {
+  body {background: yellow !important}
+}

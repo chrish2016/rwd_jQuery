@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 11 - Easy Responsive Tabs to Accordion</title>
+
+  <link type="text/css" rel="stylesheet" href="css/easy-responsive-tabs.css" />
+  <style type="text/css">
+      .container {width: 90%; margin: 0px auto; }
+      @media only screen and (max-width: 780px) {
+        .container { margin: 5%; width: 90%; }
+        .how-use { float: left; width: 300px; display: none; }
+      }
+      #tabInfo { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Easy Responsive Tabs to Accordion</h1>
+    <!--Horizontal Tab-->
+    <div id="mytab">
+      <ul class="resp-tabs-list">
+        <li>Tab-1</li>
+        <li>Tab-2</li>
+        <li>Tab-3</li>
+      </ul>
+      <div class="resp-tabs-container">
+        <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.</p>
+        </div>
+        <div>
+        <p>This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit. Vestibulum nibh urna,  Vestibulum nibh urna,it.</p>
+        </div>
+        <div>
+        <p>Suspendisse blandit velit Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravid urna gravid eget erat suscipit in malesuada odio venenatis.</p>
+        </div>
+      </div>
+    </div>
+    <br /><div id="tabInfo">Selected tab: <span class="tabName"></span></div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/easyResponsiveTabs.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#mytab').easyResponsiveTabs({
+        type: 'default', //Types: default, vertical, accordion
+        width: 'auto',
+        fit: true,
+        closed: 'accordion',
+        activate: function(event) {
+          // Callback function if tab is switched if need
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

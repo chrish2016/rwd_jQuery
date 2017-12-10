@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter 8 - Tooltipster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+  <style type="text/css">
+    body { background: #ccc; font-family: helvetica; padding: 100px; text-align: center; }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.tooltipster.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.tooltip').tooltipster();
+    });
+  </script>
+</head>
+<body>
+
+  <img style="background:white" class="tooltip" title="This is my image's tooltip message!" src="question-mark.png" />
+
+  <br><br><br><br>
+
+  <section class="container">
+    <img src="question-mark.png" usemap="#map" />
+    <map name="map">
+      <area shape="circle" coords="22,20,21" href="#" class="tooltip" title="This is my image's tooltip message!" />
+    </map>
+  </section>
+  <p>or using #map applying it only on the circle</p>
+
+</body>
+</html>

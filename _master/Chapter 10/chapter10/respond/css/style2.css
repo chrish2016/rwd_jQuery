@@ -1,0 +1,7 @@
+div#square {
+  background: lightgreen;
+}
+div#square:before {
+  content:"works: >480px";
+}
+li:last-child {background: cyan;}

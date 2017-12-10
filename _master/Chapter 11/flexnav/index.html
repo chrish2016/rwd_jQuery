@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 11 - FlexNav</title>
+
+  <link href="css/flexnav.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    body{background:#ccc; font-family: Helvetica, Arial}
+    ul {padding: 0}
+    .container { margin: 0 auto; max-width: 1080px; padding: 0 5%; }
+    #site-header { padding-top: 2em; }
+    #content {clear:both; overflow: hidden; padding-top: 40px}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header id="site-header">
+      <div class="menu-button">Menu</div>
+      <nav>
+        <ul data-breakpoint="800" class="flexnav">
+          <li><a href="">Item 1</a></li>
+          <li><a href="">Item 2</a>
+            <ul>
+              <li><a href="">Sub 1 Item 1</a></li>
+              <li><a href="">Sub 1 Item 2</a></li>
+            </ul>
+          </li>
+          <li><a href="">Item 3</a>
+            <ul>
+              <li><a href="">Sub 1 Item 1</a></li>
+              <li><a href="">Sub 1 Item 2</a></li>
+              <li><a href="">Sub 1 Item 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="content" role="main">
+      <div class="block">
+        <h2>Page title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.</p>
+      </div>
+	  </section>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.flexnav.min.js"></script>
+  <script type="text/javascript">
+		$(document).ready(function () {
+			$(".flexnav").flexNav();
+		});
+  </script>
+
+</body>
+</html>

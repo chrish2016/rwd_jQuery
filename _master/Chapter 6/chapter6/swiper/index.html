@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chapter 6 - Swiper1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/idangerous.swiper.css">
+  <style type="text/css">
+    * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+    body { margin: 100px 0 0 0; background: #333; }
+    .swiper-container { width: 70%; height: 300px; text-align: center; }
+    .pager { position: absolute; z-index: 20; left: 10px; bottom: 10px; }
+    .swiper-pagination-switch { display: inline-block; width: 1em; height: 1em; background: #222; margin-right: 5px; }
+    .slide-1 {background: lightgreen;}
+    .slide-2 {background: purple;}
+    .slide-3 {background: gold;}
+    .slide-4 {background: lightblue;}
+    .swiper-active-switch {background: white; border: 1px solid black}
+    p a {font-weight: bold; color: black; font-family: Georgia, Arial; text-decoration: underline;}
+  </style>
+</head>
+<body>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide-1">
+        <p>Slide 1</p>
+      </div>
+      <div class="swiper-slide slide-2">
+        <p>Slide 2</p>
+      </div>
+      <div class="swiper-slide slide-3">
+        <p>Slide 3</p>
+      </div>
+      <div class="swiper-slide slide-4">
+        <p>Slide 4</p>
+      </div>
+    </div>
+    <div class="pager"></div>
+  </div>
+  <br style="clear:both"><p align="center"><a href="3dflow.html">Next example &gt;&gt;</a></p>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/idangerous.swiper-2.3.min.js"></script>
+  <script>
+    $(function(){
+      var mySwiper = $('.swiper-container').swiper({
+        pagination: '.pager',
+        paginationClickable: true
+      });
+    });
+  </script>
+
+</body>
+</html>

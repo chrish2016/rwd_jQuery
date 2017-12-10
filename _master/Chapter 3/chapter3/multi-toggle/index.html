@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chapter 3 - Multi-Toggle</title>
+  <style>
+    body {font-family: helvetica;}
+    ul{margin:0;padding:0;} 
+    @media screen and (max-width: 768px) {
+      #site-nav{
+        margin:0;
+        position:absolute;
+        top:80px;
+        right:0;
+        left:0;
+        z-index:10;
+        list-style:none;
+        text-align:left;
+      }
+      #site-nav a{
+        border-bottom-width:0;
+        background:#444;
+        height:0;
+        line-height:0;
+        display:block;
+        padding:0 0 0 5%;
+        overflow:hidden;
+        color:#fff;
+        text-decoration:none;
+      }
+      .after:after {
+        content: " \0025Bc";
+        font-size: 0.5em;
+      }
+      .before:before {
+        content: " \0025C0";
+        font-size: 0.5em;
+      }
+
+      .link-to-menu {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 100;
+        background: #666;
+        padding: 10px;
+        cursor: pointer;
+      }
+      #toggle{
+        position:absolute;
+        top:-9999px;
+        left:-9999px;
+      }
+      #toggle:checked ~ nav #site-nav a {
+        line-height: 3em;
+        height: 3em;
+        border-bottom: 1px solid #999;
+        position: relative;
+        z-index: 1;
+      }
+      #toggle:checked ~ nav #site-nav .submenu li,
+      #toggle:checked ~ nav #site-nav .submenu a {
+        height: 0;
+        line-height: 0;
+        -webkit-transition: 0.5s;
+           -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+             -o-transition: 0.5s;
+                transition: 0.5s;
+        }
+        
+      #toggle:checked ~ nav #site-nav .submenu a {
+        padding-left: 7%;
+        background: #555;
+      }
+
+      #toggle:checked ~ nav #site-nav .submenu.open li,
+      #toggle:checked ~ nav #site-nav .submenu.open a {
+        height: 3em;
+        line-height: 3em;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      #toggle,
+      #back,
+      .link-to-menu,
+      #site-nav li li {
+        display:none;
+      }
+      #site-nav {
+        width: 70%;
+        float: right;
+      }
+      #site-nav li {
+        display: inline-block;
+        margin: 0 5%;
+        line-height: 1.5;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<label class="link-to-menu" for="toggle" onclick>&#9776; Menu</label>
+<input id="toggle" type="checkbox" />
+
+<nav>
+ <ul id="site-nav">
+   <li><a href="" id="back" class="before"> Back</a></li>
+   <li><a href="#">Home</a></li>
+   <li><a href="#">About</a></li>
+   <li class="current"><a href="#" class="contains-sub after">Projects</a>
+
+   <ul class="submenu">
+     <li><a href="#">Project 1</a></li>
+     <li><a href="#">Project 2</a></li>
+     <li><a href="#">Project 3</a></li>
+   </ul></li>
+
+   <li><a href="#">Blog</a></li>
+   <li><a href="#">Email</a></li>
+ </ul>
+
+<h1 id="logo">LOGO</h1>
+
+<br style="clear:both" />
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+$(document).ready(function() {
+$('a.contains-sub').click(function() {
+  if($(this).siblings('ul').hasClass('open')){
+    $(this).siblings('ul').removeClass('open');
+  } else {
+    $(this).siblings('ul').addClass('open');
+  }
+  return false;
+});
+});
+</script>
+
+</body>
+</html>

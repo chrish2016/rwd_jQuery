@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <title>Chapter 4 - slabText</title>
+  <link href="css/slabtext.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    body {padding: 1em; margin: 0;}
+    h1{font-family: 'Tahoma'; color: #333; text-transform: uppercase; text-shadow:1px 1px 2px #999; width: 46%; float: left;}
+    h1:first-child{margin-right: 7%}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="page-title">Linux commands: New users adds new users... fast &amp; furious!</h1>
+  <h1 id="specific-title">Linux commands: New users adds new users... fast &amp; furious!</h1>
+</header>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.slabtext.min.js"></script>
+  <script>
+  $(".page-title").slabText();
+
+  var stS = "<span class='slabtext'>",
+      stE = "</span>",
+      txt = [
+         "Linux commands:",
+         "Newusers",
+         "adds new users...",
+         "fast & furious!"];
+  $("#specific-title").html(stS + txt.join(stE + stS) + stE).slabText();
+  </script>
+  
+</body>
+</html>

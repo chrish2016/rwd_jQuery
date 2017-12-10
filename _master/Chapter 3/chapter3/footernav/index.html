@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 3 - Footer Nav</title>
+  <style type="text/css">
+    body {font-family: helvetica}
+    /* mobile-first */
+    #site-nav ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+    #site-nav li a {
+      display: block;
+      border-top: 1px solid #CCC;
+      padding: 3%;
+    }
+    #site-nav li:last-child a {
+      border-bottom: 1px solid #CCC;
+    }
+    #link-to-menu {
+      background: #333;
+      color: #FFFFFF;
+      font-size: 18px;
+      padding: 5px;
+      position: absolute;
+      right: 10px;
+      text-decoration: none;
+      top: 10px;
+    }
+
+    /* tablet and desktop */
+    @media only screen and (min-width: 768px) {
+     #site-nav {
+       position: absolute;
+       top: 0;
+       left: 30%;
+       width: 70%;
+     }
+     #link-to-menu {
+       display: none;
+     }
+     #site-nav li {
+       display: inline-block;
+       margin: 0 5%;
+       padding: 0;
+       width: 18%;
+       border: none;
+       line-height: 1.5;
+     }
+     #site-nav li a {
+       display: inline;
+       border: none;
+       padding: 0;
+     }
+     #site-nav li a,
+     #site-nav li:last-child a {
+       border: none;
+     }
+    }
+  </style>
+</head>
+<body>
+<a id="link-to-menu" href="#site-nav">&#9776; Menu</a>
+<h1 id="logo">LOGO</h1>
+<br style="clear:both" />
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+<nav id="site-nav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Email</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

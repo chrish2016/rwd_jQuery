@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chapter 6 - ResponsiveSlides3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/responsiveslides.css">
+  <style type="text/css">
+    body{ background: #666;}
+    .slide_container {width: 90%; margin: 100px auto 30px auto;}
+    p a {font-weight: bold; color: black; font-family: Georgia, Arial; text-decoration: underline;}
+    #pager-example3 { list-style: none; text-align: center; background: #000; background: rgba(0,0,0, .8); margin: 0; padding-top: 5px;}
+    #pager-example3 li {display: inline-block;}
+  </style>
+</head>
+<body>
+
+  <div class="slide_container">
+    <ul class="rslides" id="slider-example3"> 
+      <li><img src="images/slide-img1.jpg" /></li>
+      <li><img src="images/slide-img2.jpg" /></li>
+      <li><img src="images/slide-img3.jpg" /></li>
+      <li><img src="images/slide-img4.jpg" /></li>
+    </ul>
+    <ul id="pager-example3">
+      <li><a href="#"><img src="images/thumb-img1.jpg" /></a></li>
+      <li><a href="#"><img src="images/thumb-img2.jpg" /></a></li>
+      <li><a href="#"><img src="images/thumb-img3.jpg" /></a></li>
+      <li><a href="#"><img src="images/thumb-img4.jpg" /></a></li>
+    </ul>
+  </div>
+  <br style="clear:both"><p align="center"><a href="index.html">&lt;&lt; Back to first example</a></p>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script>
+    $("#slider-example3").responsiveSlides({
+      manualControls: '#pager-example3'
+    });
+  </script>
+
+</body>
+</html>

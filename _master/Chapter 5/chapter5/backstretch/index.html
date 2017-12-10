@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Chapter 5 - Backstretch</title>
+	<meta charset="utf-8" />
+  <style type="text/css">
+    body{background: #ccc; padding-top: 50px}
+    .div-home {height: 400px; width: 70%; margin: 0 auto; padding-top: 100px; box-shadow: 1px 1px 10px #333;}
+    h1 {background: rgba(255,255,255,0.9); height: 200px; width: 70%; margin: 0 auto; text-align: center; line-height: 200px;}
+  </style>
+</head>
+<body>
+
+  <div class="div-home">
+      <h1>Slideshow</h1>
+  </div>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+	<script>
+    $(".div-home").backstretch([
+      "images/pot-holder.jpg",
+      "images/coffee.jpg",
+      "images/dome.jpg"
+      ], {
+      fade: 750,
+      duration: 5000
+    });
+  </script>
+
+</body>
+</html>

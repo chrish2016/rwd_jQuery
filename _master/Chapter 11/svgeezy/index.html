@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 11 - SVGeezy</title>
+
+  <style type="text/css" media="all">
+    body{ background:#CCC; font-family: Helvetica, Arial}
+    .container { text-align: center; margin: 100px auto;}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p>This logo will be replaced by PNG version if browser does not support SVG (for example: IE8)<br />
+    <img src="images/mylogo.svg" /></p>
+    <br />
+    <p>This following image will not use SVGeezy because has a "nocheck" class on it:<br />
+    <img src="images/ww2soldier.svg" class="nocheck" width="250" /></p>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/svgeezy.min.js"></script>
+  <script>
+    svgeezy.init('nocheck', 'png');
+  </script>
+
+</body>
+</html>

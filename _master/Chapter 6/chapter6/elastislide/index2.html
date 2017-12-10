@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>Chapter 6 - Elastislide2</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+  <script src="js/modernizr.custom.17475.js"></script>
+  <style type="text/css">
+    body{ background: #ccc;}
+    .main {width: 50%; margin: 10px auto}
+    .elastislide-vertical {height: auto !important;}
+    p a {font-weight: bold; color: navy; font-family: Georgia, Arial;}
+  </style>
+</head>
+<body>
+
+  <div class="demo-2">
+    <div class="main">
+      <ul id="carousel" class="elastislide-list">
+        <li><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
+        <li><a href="#"><img src="images/small/2.jpg" alt="image02" /></a></li>
+        <li><a href="#"><img src="images/small/3.jpg" alt="image03" /></a></li>
+        <li><a href="#"><img src="images/small/4.jpg" alt="image04" /></a></li>
+        <li><a href="#"><img src="images/small/5.jpg" alt="image05" /></a></li>
+        <li><a href="#"><img src="images/small/6.jpg" alt="image06" /></a></li>
+        <li><a href="#"><img src="images/small/7.jpg" alt="image07" /></a></li>
+      </ul>
+    </div>
+  </div>
+  <br><p align="center"><a href="index3.html">Next example &gt;&gt;</a></p>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquerypp.custom.js"></script>
+  <script src="js/jquery.elastislide.js"></script>
+  <script>
+    $('#carousel').elastislide({
+      orientation: 'vertical',
+      speed: 250
+    });
+  </script>
+
+</body>
+</html>

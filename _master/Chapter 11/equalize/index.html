@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 11 - Equalize</title>
+  <style type="text/css">
+    body {font-family: Helvetica, Arial; background: #CCC;}
+    .divs-height {
+      width: 500px;
+      margin: 100px auto;
+      border: 1px solid gray;
+      overflow: hidden;
+      background: pink;
+    }
+    #equalize-height { background: lightgreen;}
+    .divs-height div {
+      float: left;
+      text-align: center;
+      background: #DDD;
+      margin: 10px;
+      padding: 10px;
+      width: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="divs-height">
+    <div>equalize</div>
+    <div>equalize content height</div>
+    <div>equalize</div>
+    <div>equalize</div>
+    <div>equalize</div>
+    <div>equalize content</div>
+    <div>equalize</div>
+    <div>equalize</div>
+    <div>equalize content height</div>
+    <div>equalize</div>
+  </div>
+
+  <div class="divs-height" id="equalize-height">
+    <div>equalize</div>
+    <div>equalize content height</div>
+    <div>equalize</div>
+    <div>equalize</div>
+    <div>equalize</div>
+    <div>equalize content</div>
+    <div>equalize</div>
+    <div>equalize</div>
+    <div>equalize content height</div>
+    <div>equalize</div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/equalize.min.js"></script>
+  <script>
+    $(function() {
+      $('#equalize-height').equalize();
+    });
+  </script>
+
+</body>
+</html>

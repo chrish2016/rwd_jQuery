@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter 5 - FitVids.js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+  	body {background: #ddd;}
+    video {max-width: 100%;height: auto;}
+    iframe, embed, object {max-width: 100%;}
+    .container {
+      width: 70%;
+      padding: 5%;
+      margin: 0px auto;
+      background: white;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    .vendor {padding: 2%; background: lightgreen; margin-bottom: 2em;}
+    .unsupported {background: pink;}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="vendor">
+    	<iframe width="425" height="349" src="http://www.youtube.com/embed/UM0Cl3wWys0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="vendor">
+    	<iframe src="http://player.vimeo.com/video/25708134?title=0&byline=0&portrait=0" width="400" height="225" frameborder="0"></iframe>
+    </div>
+
+    <div class="vendor">
+    	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="437" height="288" id="viddler"><param name="movie" value="http://www.viddler.com/player/d6c37b62/" /><param name="allowScriptAccess" value="always" /><param name="allowFullScreen" value="true" /><param name="flashvars" value="fake=1"/><embed src="http://www.viddler.com/player/d6c37b62/" width="437" height="288" type="application/x-shockwave-flash" allowScriptAccess="always" allowFullScreen="true" flashvars="fake=1" name="viddler" ></embed></object>
+    </div>
+
+    <div class="vendor">
+    	<embed src="http://blip.tv/play/AYHCnikC" type="application/x-shockwave-flash" width="550" height="396" wmode="transparent" allowscriptaccess="always" allowfullscreen="true" ></embed>
+    </div>
+
+    <div class="vendor">
+      <iframe frameborder="0" height="410px" src="http://www.kickstarter.com/projects/30453381/the-shape-of-design/widget/video.html" width="480px"></iframe>
+    </div>
+
+    <div class="vendor">
+      <iframe width="520px" height="391px" src="http://socialcam.com/videos/XRMP3Y5t/embed?utm_campaign=web&utm_source=embed" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script>
+    // Basic FitVids Test
+    $(".container").fitVids();
+    // Custom selector and No-Double-Wrapping Prevention Test
+    $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+  </script>
+
+  </body>
+</html>

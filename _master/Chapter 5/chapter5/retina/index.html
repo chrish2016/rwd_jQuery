@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter 5 - Retina</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    body {background: #DDD; font-family: Helvetica;}
+    #content {width: 80%; margin:0 auto; background: white; min-height: 200px; text-align: center; padding-top: 100px }
+
+    span.bigicon-success,
+    span.bigicon-cancel {
+      background: url('images/sprite.png') no-repeat 0 -50px;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      text-indent: -999em;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+    span.bigicon-cancel {
+      background-position: -50px -50px;
+    }
+    span.bigicon-success:hover {
+      background-position: 0 0;
+    }
+    span.bigicon-cancel:hover {
+      background-position: -50px 0px;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+      span.bigicon-success,
+      span.bigicon-cancel {
+        background-image: url('images/sprite@2x.png');
+        background-size: 200px 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="content">
+
+    <p>retina CSS sprite</p>
+    <span class="bigicon-success">Success</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bigicon-cancel">Cancel</span>
+
+  </div>
+
+</body>
+</html>

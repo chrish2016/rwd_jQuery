@@ -1,0 +1,72 @@
+body { 
+    font: 12px/1.3 normal Arial, Helvetica, sans-serif;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+th {
+  background: #ccc;
+}
+caption {
+  background: #eee;
+  padding: 10px;
+  font-size: 1.3em; 
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 520px){
+  html:not(.full-table) .full-table th, 
+  html:not(.full-table) .full-table td {
+    font-size: 0;
+    padding: 0;
+    content: "";
+    height: 7px;
+  }
+  html:not(.full-table) table {
+    position: relative; 
+    overflow: hidden;
+  }
+  html:not(.full-table) table:before {
+    content: "Table: Tap to View";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 100;
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+  }
+   html.full-table table:before {
+    content: "";
+    display: block;
+    background: #333;
+    padding: 10px;
+  }
+  html.full-table table:before{
+    content: "Back";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding: .5em 1em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  /* hide all other elements on page if have*/
+  html.full-table h1, html.full-table h2, html.full-table p {
+    display: none; 
+  }
+}

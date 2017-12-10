@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="svg2" sodipodi:version="0.32" inkscape:version="0.46" width="492.94467" height="597.78601" version="1.0" sodipodi:docname="ww2soldier.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs id="defs5">
+    <linearGradient id="linearGradient3608">
+      <stop id="stop3610" offset="0" style="stop-color:#333333;stop-opacity:1"/>
+      <stop id="stop3616" offset="1" style="stop-color:#000000;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3588">
+      <stop id="stop3590" offset="0" style="stop-color:#cdde87;stop-opacity:1"/>
+      <stop id="stop3596" offset="1" style="stop-color:#445500;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3576">
+      <stop style="stop-color:#c8ab37;stop-opacity:1" offset="0" id="stop3578"/>
+      <stop style="stop-color:#786721;stop-opacity:1" offset="1" id="stop3584"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3556">
+      <stop style="stop-color:#ff9955;stop-opacity:1" offset="0" id="stop3558"/>
+      <stop id="stop3560" offset="0.2679567" style="stop-color:#d38d5f;stop-opacity:1"/>
+      <stop style="stop-color:#c87137;stop-opacity:1" offset="0.74985868" id="stop3562"/>
+      <stop style="stop-color:#c87137;stop-opacity:1" offset="1" id="stop3564"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3474">
+      <stop id="stop3476" offset="0" style="stop-color:#c87137;stop-opacity:1"/>
+      <stop style="stop-color:#c87137;stop-opacity:1" offset="0.2562013" id="stop3478"/>
+      <stop id="stop3480" offset="0.43624884" style="stop-color:#c87137;stop-opacity:1"/>
+      <stop id="stop3482" offset="1" style="stop-color:#28170b;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3282">
+      <stop style="stop-color:#5b3821;stop-opacity:1" offset="0" id="stop3284"/>
+      <stop id="stop3290" offset="0.5" style="stop-color:#e9c6af;stop-opacity:1"/>
+      <stop style="stop-color:#76533c;stop-opacity:1;" offset="0.75" id="stop3292"/>
+      <stop style="stop-color:#502d16;stop-opacity:1" offset="1" id="stop3286"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3208">
+      <stop id="stop3210" offset="0" style="stop-color:#ff9955;stop-opacity:1"/>
+      <stop style="stop-color:#ffb380;stop-opacity:1" offset="0.5" id="stop3338"/>
+      <stop id="stop3340" offset="0.75" style="stop-color:#ff9955;stop-opacity:1"/>
+      <stop id="stop3212" offset="1" style="stop-color:#c87137;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3180">
+      <stop style="stop-color:#cdde87;stop-opacity:1" offset="0" id="stop3182"/>
+      <stop id="stop3318" offset="0.33192685" style="stop-color:#9aab54;stop-opacity:1;"/>
+      <stop style="stop-color:#80913a;stop-opacity:1;" offset="0.59836942" id="stop3320"/>
+      <stop style="stop-color:#445500;stop-opacity:1" offset="1" id="stop3184"/>
+    </linearGradient>
+    <inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" id="perspective9"/>
+    <inkscape:perspective id="perspective2482" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 526.18109 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective id="perspective2524" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 526.18109 : 1" sodipodi:type="inkscape:persp3d"/>
+  </defs>
+  <sodipodi:namedview inkscape:window-height="480" inkscape:window-width="640" inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" showgrid="false" inkscape:zoom="0.43166667" inkscape:cx="-21.981397" inkscape:cy="314.73475" inkscape:current-layer="svg2" showguides="true" inkscape:guide-bbox="true"/>
+  <path style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.70007616px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="M 249.21875 0.34375 C 210.89251 0.40616001 171.83394 8.8950339 137.28125 24.53125 C 41.106792 71.824578 17.340066 179.62042 43.9375 286.8125 C 38.988808 299.94394 29.747184 305.88689 20.90625 312.53125 L 21.96875 316.3125 C 46.39908 321.42904 71.00942 323.73218 95.75 323.5625 C 97.618133 326.65252 99.125 329 99.125 329 L 110.03125 346.8125 C 111.01785 369.47897 112.46009 370.27008 106.09375 383.3125 C 104.97151 385.61158 95.96395 375.53356 94.71875 377.71875 C 87.33085 390.68361 86.86079 422.41811 72.3125 443.4375 C 51.309036 471.6555 30.315959 506.06793 9.3125 540.0625 C 3.2476523 551.89394 0.446614 566.9878 0.34375 584.78125 C 53.349205 562.96093 95.650633 503.8725 196.78125 584.78125 C 237.15624 602.1012 277.53126 601.18974 317.90625 584.78125 C 307.78186 562.5325 295.24731 538.66575 289.28125 519.1875 C 292.15555 514.55146 296.04507 509.62486 301.4375 504 L 301.4375 482.125 L 306.03125 475.03125 L 309.1875 482.96875 C 321.53789 485.92865 333.89962 479.93596 346.25 474.75 L 340.3125 454.28125 C 362.28334 461.35806 378.6083 468.38743 404.0625 466.1875 C 413.94198 464.26687 413.49596 462.72689 420.375 457.8125 C 426.92653 451.98577 433.90994 445.12351 431.28125 432.9375 L 422.75 403.65625 C 425.29321 397.94763 427.77797 392.19731 431.34375 387 C 429.48531 384.68776 427.34476 382.8015 424.4375 382.0625 L 414.40625 382.8125 L 428.25 374.84375 L 434.71875 370.03125 C 430.4186 362.54328 425.1305 360.75779 427.84375 340.0625 L 455.1875 332.375 C 461.67634 329.37067 463.94453 319.26686 462 309.9375 L 419.34375 249.84375 L 427.84375 235.96875 L 425.75 228.875 C 446.5173 230.33766 467.48536 225.01623 489.03125 214.25 L 492.59375 209.625 C 477.06601 206.73224 461.8819 203.15315 450.125 192.71875 C 452.21737 161.52264 437.70637 139.93932 430.0625 116.875 C 403.06158 35.403683 327.69629 0.21595 249.21875 0.34375 z M 146.53125 99.875 C 165.61001 140.23219 216.93299 132.8565 200.34375 201.4375 C 186.65088 230.06613 166.85383 224.39236 154.4375 199.0625 C 156.22763 216.93793 153.13056 225.31826 159.40625 246.28125 L 148.84375 247.71875 C 154.18115 224.2149 148.68434 219.68913 148.40625 202.46875 C 138.03862 225.6377 128.00016 232.33532 113.625 216.40625 C 85.637195 176.14063 133.4662 134.97962 146.53125 99.875 z " id="path2506"/>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Open Clip Art Library</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>U.S. World War Two Soldier Silhouette</dc:title>
+        <dc:date>2011-09-03T09:17:20</dc:date>
+        <dc:description>Inspired by Band of Brothers.</dc:description>
+        <dc:source>http://openclipart.org/detail/159013/u.s.-world-war-two-soldier-silhouette-by-studio_hades</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>studio_hades</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Army</rdf:li>
+            <rdf:li>Band of Brothers</rdf:li>
+            <rdf:li>Head</rdf:li>
+            <rdf:li>Infantry</rdf:li>
+            <rdf:li>M1 Helmet</rdf:li>
+            <rdf:li>Male</rdf:li>
+            <rdf:li>Profile</rdf:li>
+            <rdf:li>Silhouette</rdf:li>
+            <rdf:li>Soldier</rdf:li>
+            <rdf:li>World War Two</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

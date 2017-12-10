@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 11 - Packery</title>
+  <style type="text/css">
+    * { margin: 0; padding: 0;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+    img {max-width: 100%; height: auto; border:1px solid black; }
+    body {background: orange; }
+    @media screen and (min-width: 1281px) { /* TV */ }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+      /* DESKTOP - 4 columns */
+      body {background: lime; }
+      #container > div { width: 25%; }
+      #container > div.w2 { width: 50%; }
+      #container > div.w4 { width: 100%; }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) { 
+      /* TABLET - 3 columns */
+      body {background: red; }
+      #container > div { width: 33%; }
+      #container > div.w2 { width: 66%; }
+      #container > div.w4 { width: 100%; }
+    }
+    @media screen and (max-width: 767px) {
+      /* SMARTPHONE - 1 columns */
+      body {background: yellow; }
+      #container > div { width: 100%; border: 1px solid #666; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>desktop</h1>
+  <div id="container" class="js-packery">
+    <div class="item w4"><img src="http://fpoimg.com/1280x250"></div>
+    <div class="item w2"><img src="http://fpoimg.com/640x250"></div>
+    <div class="item"><img src="http://fpoimg.com/320x250"></div>
+    <div class="item"><img src="http://fpoimg.com/320x250"></div>
+    <div class="item"><img src="http://fpoimg.com/320x250"></div>
+    <div class="item"><img src="http://fpoimg.com/320x250"></div>
+    <div class="item w2"><img src="http://fpoimg.com/640x250"></div>
+    <div class="item"><img src="http://fpoimg.com/320x250"></div>
+    <div class="item"><img src="http://fpoimg.com/320x250"></div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/packery.pkgd.min.js"></script>
+  <script>
+    var $container = $('#container');
+    $container.packery({
+      itemSelector: '#container > div',
+      gutter: 0
+    });
+  </script>
+
+</body>
+</html>

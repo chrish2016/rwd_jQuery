@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chapter 6 - ResponsiveSlides1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/responsiveslides.css">
+  <style type="text/css">
+    body{ background: #666;}
+    #wrapper {width: 90%; margin: 100px auto 30px auto;}
+    p a {font-weight: bold; color: black; font-family: Georgia, Arial;}
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+    <ul class="rslides">
+      <li><img src="images/slide-img1.jpg" /></li>
+      <li><img src="images/slide-img2.jpg" /></li>
+      <li><img src="images/slide-img3.jpg" /></li>
+      <li><img src="images/slide-img4.jpg" /></li>
+    </ul>
+  </div>
+  <br><p align="center"><a href="index2.html">Next example &gt;&gt;</a></p>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script>
+    $(function() {
+      $(".rslides").responsiveSlides();
+    });
+  </script>
+
+</body>
+</html>

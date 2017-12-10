@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 7 - Header Orientation Flip</title>
+	<link rel="stylesheet" href="css/responsive-tables.css">
+
+  <style type="text/css">
+    body{font-family: Helvetica, Arial}
+    * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    }
+    .responsive {border-collapse: collapse; width: 100%; }
+    @media only screen and (max-width: 767px) {
+      .responsive {
+        display: block; position: relative; 
+      }
+      .responsive thead {
+        display: block; float: left;
+      }
+      .responsive tbody { 
+        display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap;
+      }
+      .responsive thead tr {
+        display: block;
+      }
+      .responsive th {
+        display: block; border: 0; border-top: 1px solid #ccc; border-right: 1px solid #ccc; padding: 8px 10px !important;
+      }
+      .responsive tbody tr {
+        display: inline-block; vertical-align: top; border-right: 1px solid #ccc;
+      }
+      .responsive td {
+        display: block; min-height: 1.25em; border: 0;
+      }
+      table.responsive th:first-child, table.responsive td:first-child,
+      table.responsive td:first-child, table.responsive.pinned td { display: block; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <table class="responsive" cellpadding="0" cellspacing="0" border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Doctor names</th>
+        <th>Values</th>
+        <th>Dates</th>
+        <th>Cash Money</th>
+        <th>Message</th>
+        <th>City</th>
+        <th>State</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dr. Jayhawk</td>
+        <td>102</td>
+        <td>03/30/1940</td>
+        <td>$60.42</td>
+        <td>PAID</td>
+        <td>Atlanta</td>
+        <td>Georgia</td>
+      </tr>
+      <tr>
+        <td>Dr. John Smith</td>
+        <td>137</td>
+        <td>03/18/1953</td>
+        <td>$69.68</td>
+        <td>PAID</td>
+        <td>Orlando</td>
+        <td>Florida</td>
+      </tr>
+      <tr>
+        <td>Dr. Wolverine</td>
+        <td>154</td>
+        <td>03/29/1976</td>
+        <td>$86.68</td>
+        <td>PAID</td>
+        <td>New Orleans</td>
+        <td>Louisiana</td>
+      </tr>
+      <tr>
+        <td>Dr. Tarheel</td>
+        <td>113</td>
+        <td>03/30/1981</td>
+        <td>$63.50</td>
+        <td>PAID</td>
+        <td>San Antonio</td>
+        <td>Texas</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

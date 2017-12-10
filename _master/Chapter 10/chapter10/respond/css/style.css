@@ -1,0 +1,6 @@
+div#square {
+  background: gold;
+}
+div#square:before {
+  content:"works: <480px";
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 7 - Full Table</title>
+  <link href="css/full-table.css" rel="stylesheet" />
+  <style type="text/css">
+  body {
+    padding: 1em;
+  }
+  </style>
+</head>
+<body>
+
+<table id="responsive" class="full-table">
+  <thead>
+    <tr>
+      <th>Contact name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Picture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bob Builder</td>
+      <td>555-12345</td>
+      <td>bob@home.com</td>
+      <td><img src="http://fpoimg.com/30x30" alt="Profile image" /></td>
+    </tr>
+    <tr>
+      <td>Bridget Jones</td>
+      <td>544-776655</td>
+      <td>bjones@mysite.com</td>
+      <td><img src="http://fpoimg.com/30x30" alt="Profile image" /></td>
+    </tr>
+    <tr>
+      <td>Tom Cruise</td>
+      <td>555-99911</td>
+      <td>cruise1@crazy.com</td>
+      <td><img src="http://fpoimg.com/30x30" alt="Profile image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+  $("#responsive").click(function(){
+    $("html").toggleClass($(this).attr("class"));
+  });
+});
+</script>
+
+</body>
+</html>

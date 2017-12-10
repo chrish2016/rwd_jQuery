@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 7 - Footable</title>
+  <link href="css/footable.metro.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<p style="font-family:Helvetica">Filter by: <input id="filter" type="text"></p>
+
+<table class="expandable-table" data-filter="#filter" data-page-size="2">
+  <thead>
+    <tr>
+      <th data-sort-initial="true" data-class="expand-icon">Contact name</th>
+      <th data-sort-ignore="true"  data-hide="phone">Phone</th>
+      <th data-sort-initial="true" data-hide="phone,tablet ">Email</th>
+      <th data-sort-ignore="true"  data-hide="phone" data-ignore="true">Picture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bob Builder</td>
+      <td>555-12345</td>
+      <td>bob@home.com</td>
+      <td><img src="http://fpoimg.com/30x30" alt="Profile image" /></td>
+    </tr>
+    <tr>
+      <td>Bridget Jones</td>
+      <td>544-776655</td>
+      <td>bjones@mysite.com</td>
+      <td><img src="http://fpoimg.com/30x30" alt="Profile image" /></td>
+    </tr>
+    <tr>
+      <td>Tom Cruise</td>
+      <td>555-99911</td>
+      <td>cruise1@crazy.com</td>
+      <td><img src="http://fpoimg.com/30x30" alt="Profile image" /></td>
+    </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="4">
+      <div class="pagination-centered hide-if-no-paging pagination"></div>
+    </td>
+  </tr>
+</tfoot>
+
+</table>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js "></script>
+<script src="js/footable.min.js"></script>
+<script src="js/footable.filter.min.js"></script>
+<script src="js/footable.paginate.min.js"></script>
+<script src="js/footable.sort.min.js"></script>
+
+<script>
+  jQuery(function() {
+    jQuery(".expandable-table").footable();
+  });
+</script>
+
+</body>
+</html>

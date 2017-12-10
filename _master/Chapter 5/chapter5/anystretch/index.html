@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Chapter 5 - Anystretch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    * { margin:0; padding:0;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box; }
+    body { background:#ccc; color:#fff; font:1em/1.4em Georgia, 'Times New Roman', serif; }
+    h1 {line-height: 1.2; padding-bottom: 0.5em}
+    strong {color:yellow;}
+    div { border:10px solid #fff; margin:5%; }
+    div div { background:rgba(0,0,0,0.6); border:none; margin:0 0 0 50%; padding:6% 2%; }
+  </style>
+</head>
+  
+  <body>
+    
+    <div class="div-home stretchMe" data-stretch="images/bg-home.jpg">
+      <div>
+      <h1>Element with hardly any content</h1>
+      <p>main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content <br> <strong>right and bottom</strong></p></div>
+    </div>
+    <div class="div-footer stretchMe" data-stretch="images/bg-footer.jpg">
+      <div>
+      <h1>Element with hardly any content</h1>
+      <p>main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content main&nbsp;content <br> <strong>centered</strong></p></div>
+    </div>
+
+  
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.anystretch.min.js"></script>
+    
+<script>
+  $(".div-home").anystretch('',{speed:300, positionX:'right', positionY:'bottom'});
+  $(".div-footer").anystretch();
+</script>
+
+  </body>
+</html>

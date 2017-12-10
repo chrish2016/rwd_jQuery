@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="charset=utf-8">
+  <title>Chapter 6 - FlexSlider3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <style type="text/css">
+    #slider {margin: 50px auto;}
+    .flexslider {width: 80%; margin: 0 auto; max-width: 840px;}
+    .loading .flex-viewport { max-height: 500px; }
+    p a {font-weight: bold; color: navy; font-family: Georgia, Arial; text-decoration: underline;}
+  </style>
+</head>
+<body class="loading">
+
+  <div id="slider" class="flexslider">
+    <ul class="slides">
+      <li><img src="images/slide-img1.jpg" /></li>
+      <li><img src="images/slide-img2.jpg" /></li>
+      <li><img src="images/slide-img3.jpg" /></li>
+      <li><img src="images/slide-img4.jpg" /></li>
+    </ul>
+  </div>
+  <br style="clear:both"><p align="center"><a href="index.html">&lt;&lt; Back to first example</a></p>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script defer src="js/jquery.flexslider-min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        minItems: 2,
+        maxItems: 4
+      });
+    });
+  </script>
+
+</body>
+</html>

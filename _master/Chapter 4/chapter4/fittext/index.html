@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Chapter 4 - FitText</title>
+
+  <style type="text/css">
+    body {
+      background: #666;
+      font: 16px/1.8 sans-serif;
+    }
+    .container {
+      width: 84%;
+      margin:0 auto;
+      max-width:1140px;
+    }
+    header {
+      width: 100%;
+      margin:0px auto;
+    }
+    h1 {
+      text-align: center;
+      color:#FFCC00;
+      font: 50px/1 "Impact";
+      text-transform: uppercase;
+      display: block;
+      text-shadow:#333 2px 2px 2px;
+      margin: 5% auto 5%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+    <h1 id="responsive_headline1">My title using FitText</h1>
+    <h1 id="responsive_headline2">My title using FitText</h1>
+    <h1 id="responsive_headline3">My title using FitText</h1>
+    </header>
+  </div>
+  
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script>
+    $("#responsive_headline1").fitText();
+    $("#responsive_headline2").fitText(1.2);
+    $("#responsive_headline3").fitText(1, {minFontSize:'20px', maxFontSize:'40px'});
+  </script>
+  
+</body>
+</html>

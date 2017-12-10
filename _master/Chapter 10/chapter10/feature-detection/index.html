@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 10 - Feature detection</title>
+  <style type="text/css">
+    body { background: #ccc; padding-top: 100px; font-family: Helvetica, Arial }
+  </style>
+</head>
+<body>
+
+<p align="center">CSSBrowserSelector, Modernizr and YepNope in use.</p>
+<p align="center">Inspect the source code to check.</p>
+<br />
+<div class="xy" id="square"></div>
+
+<script src="js/css_browser_selector.js"></script>
+<script src="js/modernizr.custom.03728.js"></script>
+<script>
+  Modernizr.load({
+    test: Modernizr.csstransforms,
+    yep : 'css/cssTransform.css',
+    nope: ['css/noTransform.css','js/pseudoTransforms.js ']
+  });
+</script>
+
+</body>
+</html>

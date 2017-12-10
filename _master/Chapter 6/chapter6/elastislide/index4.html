@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>Chapter 6 - Elastislide4</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+  <script src="js/modernizr.custom.17475.js"></script>
+  <style type="text/css">
+    body{ background: #ccc}
+    .main { margin: 100px auto; }
+    .demo-4 {width: 450px; margin: 0 auto;}
+    .image-preview img {border-radius:0 0 30px 30px;}
+    p a {font-weight: bold; color: navy; font-family: Georgia, Arial;}
+  </style>
+</head>
+
+<body>
+  <div class="demo-4">
+    <div class="main">
+      <div class="gallery">
+        <ul id="carousel" class="elastislide-list">
+          <li data-preview="images/large/4.jpg"><a href="#"><img src="images/small/4.jpg" alt="image04" /></a></li>
+          <li data-preview="images/large/5.jpg"><a href="#"><img src="images/small/5.jpg" alt="image05" /></a></li>
+          <li data-preview="images/large/6.jpg"><a href="#"><img src="images/small/6.jpg" alt="image06" /></a></li>
+          <li data-preview="images/large/7.jpg"><a href="#"><img src="images/small/7.jpg" alt="image07" /></a></li>
+          <li data-preview="images/large/1.jpg"><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
+          <li data-preview="images/large/2.jpg"><a href="#"><img src="images/small/2.jpg" alt="image02" /></a></li>
+          <li data-preview="images/large/3.jpg"><a href="#"><img src="images/small/3.jpg" alt="image03" /></a></li>
+        </ul>
+        <div class="image-preview">
+          <img id="preview" src="images/large/4.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><p align="center"><a href="index.html">&lt;&lt; Back to first example</a></p>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/jquerypp.custom.js"></script>
+  <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+  <script type="text/javascript">
+    var current = 0,
+      $preview = $('#preview'),
+      $carouselEl = $('#carousel'),
+      $carouselItems = $carouselEl.children(),
+      carousel = $carouselEl.elastislide({
+        current : current,
+        minItems : 4,
+        onClick : function(el, pos, evt){
+          changeImage(el, pos);
+          evt.preventDefault();
+        },
+        onReady : function() {
+          changeImage($carouselItems.eq(current), current);
+        }
+      });
+
+    function changeImage( el, pos ) {
+      $preview.attr( 'src', el.data( 'preview' ) );
+      $carouselItems.removeClass( 'current-img' );
+      el.addClass( 'current-img' );
+      carousel.setCurrent( pos );
+    }
+  </script>
+</body>
+</html>

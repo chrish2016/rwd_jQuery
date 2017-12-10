@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chapter 6 - Slicebox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+    <style>
+      * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+      .wrapper { position: relative; max-width: 840px; width: 100%; padding: 0 50px; margin: 0 auto; }
+    </style>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <ul id="sb-slider" class="sb-slider">
+        <li>
+          <a href="#"><img src="images/slide-img1.jpg" /></a>
+          <div class="sb-description"><h3>Creative Lifesaver</h3></div>
+        </li>
+        <li>
+          <a href="#"><img src="images/slide-img2.jpg" /></a>
+          <div class="sb-description"><h3>Honest Entertainer</h3></div>
+        </li>
+        <li>
+          <a href="#"><img src="images/slide-img3.jpg" /></a>
+          <div class="sb-description"><h3>Brave Astronaut</h3></div>
+        </li>
+        <li>
+          <a href="#"><img src="images/slide-img4.jpg" /></a>
+          <div class="sb-description"><h3>Faithful Investor</h3></div>
+        </li>
+      </ul>
+      <div id="shadow" class="shadow"></div>
+      <div id="nav-arrows" class="nav-arrows">
+        <a href="#">Next</a>
+        <a href="#">Previous</a>
+      </div>
+      <div id="nav-dots" class="nav-dots">
+        <span class="nav-dot-current"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.slicebox.min.js"></script>
+  <script>
+    $(function() {
+      var Page = (function() {
+        var $navArrows = $('#nav-arrows').hide(),
+          $navDots = $('#nav-dots').hide(),
+          $nav = $navDots.children('span'),
+          $shadow = $('#shadow').hide(),
+          slicebox = $('#sb-slider').slicebox( {
+            onReady: function() {
+              $navArrows.show();
+              $navDots.show();
+              $shadow.show();
+            },
+            onBeforeChange: function(pos) {
+              $nav.removeClass('nav-dot-current');
+              $nav.eq(pos).addClass('nav-dot-current');
+            }
+          } ),
+          init = function() {
+            initEvents();
+          },
+          initEvents = function() {
+            $navArrows.children(':first').on('click', function() {
+              slicebox.next();
+              return false;
+            } );
+            $navArrows.children(':last').on('click', function() {
+              slicebox.previous();
+              return false;
+            } );
+            $nav.each( function(i) {
+              $(this).on('click', function(event) {
+                var $dot = $(this);
+                if(!slicebox.isActive()) {
+                  $nav.removeClass('nav-dot-current');
+                  $dot.addClass('nav-dot-current');
+                }
+                slicebox.jump(i+1);
+                return false;
+              });
+            });
+          };
+          return { init : init };
+      })();
+      Page.init();
+    });
+  </script>
+</body>
+</html>

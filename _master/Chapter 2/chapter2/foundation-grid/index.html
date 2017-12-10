@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chapter 2 - Foundation 4 grid</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <script src="js/custom.modernizr.js"></script>
+  <style>
+    .row {margin-bottom: 20px;}
+    .columns {min-height: 50px; border-left: 1px solid black; background: #999; text-align: center; line-height: 50px;}
+    .columns .columns {background: #777}
+  </style>
+</head>
+<body>
+
+  <div class="row">
+   <div class="small-3 columns">3</div>
+   <div class="small-6 columns">6</div>
+   <div class="small-3 columns">3</div>
+  </div>
+
+  <div class="row">
+   <div class="small-6 large-5 columns">6small or 5large</div>
+   <div class="small-6 large-7 columns">6small or 7large</div>
+  </div>
+
+  <div class="row">
+   <div class="small-8 columns">8
+     <div class="row">
+       <div class="small-3 columns">3 Nested</div>
+       <div class="small-9 columns">9 Nested</div>
+     </div>
+   </div>
+   <div class="small-4 columns">4</div>
+  </div>
+
+  <div class="row">
+   <div class="large-2 columns">2</div>
+   <div class="large-8 large-offset-2 columns">8, offset 2</div>
+  </div>
+
+  <div class="row">
+   <div class="small-6 small-centered columns">6 centered</div>
+  </div>
+
+  <div class="row">
+   <div class="small-4 push-8 columns">4</div>
+   <div class="small-8 pull-4 columns">8, last</div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

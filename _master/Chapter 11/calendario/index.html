@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Chapter 11 - Calendario</title>
+
+  <link rel="stylesheet" type="text/css" href="css/calendar.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom_1.css" />
+  <style type="text/css">
+    * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+    body {font-family: Helvetica, Arial;}
+    h2, h3 {margin: 0; padding: 0;}
+    .clearfix {overflow: hidden; clear: both;}
+  </style>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="custom-calendar-wrap custom-calendar-full">
+      <div class="custom-header clearfix">
+        <h2>Calendario</h2>
+        <h3 class="custom-month-year">
+          <span id="custom-month" class="custom-month"></span>
+          <span id="custom-year" class="custom-year"></span>
+          <nav>
+            <span id="custom-prev" class="custom-prev"></span>
+            <span id="custom-next" class="custom-next"></span>
+          </nav>
+        </h3>
+      </div>
+      <div id="calendar" class="fc-calendar-container"></div>
+    </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.calendario.js"></script>
+  <script> 
+    $(function() {
+      var cal = $( '#calendar' ).calendario(),
+        $month = $( '#custom-month' ).html( cal.getMonthName() ),
+        $year = $( '#custom-year' ).html( cal.getYear() );
+
+      $( '#custom-next' ).on( 'click', function() {
+        cal.gotoNextMonth( updateMonthYear );
+      } );
+      $( '#custom-prev' ).on( 'click', function() {
+        cal.gotoPreviousMonth( updateMonthYear );
+      } );
+
+      function updateMonthYear() {        
+        $month.html( cal.getMonthName() );
+        $year.html( cal.getYear() );
+      }
+    });
+  </script>
+
+</body>
+</html>

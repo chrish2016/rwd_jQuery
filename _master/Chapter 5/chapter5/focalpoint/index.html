@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter 5 - FocalPoint</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/focal-point.min.css" rel="stylesheet" />
+  <style type="text/css">
+    body {background: #EEE; font-family: Helvetica;}
+    .no-focal, .focal-point {width: 80%; margin:0 auto }
+    img {max-width: 100%; height: auto;}
+    @media all and (max-width: 767px) {
+      body {background: lightgreen;}
+    }
+  </style>
+</head>
+<body>
+
+
+<p>Using FocalPoint<br>which activates when the max width = 767px</p>
+<!-- add the class "portrait" if the picture were portrait -->
+<div class="focal-point right-5 up-4">
+  <div><img src="images/painted-veil.jpg" border="0" alt="Painted Veil image"></div>
+</div>
+
+<p>Common image resizing</p>
+<div class="no-focal">
+  <img src="images/painted-veil.jpg" border="0" alt="Painted Veil image">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Chapter 4 - Kern.js</title>
+
+  <style type="text/css">
+    body {background: #CCC; font-family: arial }
+    h1 {
+      font-family: 'Impact';
+      color: #333;
+      font-size:50px;
+      text-transform:uppercase;
+      text-shadow: 1px 1px 2px #666;
+    }
+    .char1,.word1,.line1 { color: purple; }
+    .char2,.word2,.line2 { color: orange; }
+    .char3,.word3,.line3 { color: yellow; }
+    .char4,.line4 { color: blue; }
+    .char5 { color: green; }
+    .char6 { color: indigo; }
+    .char7 { color: violet; } 
+    .char8 { color: gold; } 
+    .char9 { color: cyan; } 
+    .char10 { color: lime; }
+  </style>
+
+</head>
+
+<body>
+
+  <h1 id="fancy-title">Page Title</h1>
+
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/kern.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $("#fancy-title").lettering();
+    });
+  </script>
+
+</body>
+</html>

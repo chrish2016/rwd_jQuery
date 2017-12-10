@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 3 - Responsive Nav</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.min.js"></script>
+    <style type="text/css">
+    body {font-family: helvetica; margin:0 10px;}
+    @media only screen and (max-width: 640px) {
+      nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+      }
+      #site-nav a {
+        display: block;
+        border-top: 1px solid #CCC;
+        padding: 0.7em;
+        background: #F43C12;
+        color: #FFF;
+      }
+      #site-nav:last-child a {
+        border-bottom: 1px solid #CCC;
+      }
+      .nav-toggle {
+        background: #333;
+        color: #FFFFFF;
+        font-size: 18px;
+        padding: 5px;
+        margin: 10px 0;
+        text-decoration: none;
+        float: right;
+      }
+    }
+    @media only screen and (min-width: 640px) {
+      #site-nav {
+        float: right;
+        width: 80%;
+        padding-top: 15px;
+      }
+      #site-nav li {
+        display: inline;
+        margin: 0 5%;
+        line-height: 1.5;
+      }
+    }
+    #logo { padding: 10px 0 20px; margin:0 }
+    </style>
+  </head>
+  <body>
+
+      <nav id="site-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Email</a></li>
+        </ul>
+      </nav>
+      <h1 id="logo">LOGO</h1>
+
+      <br style="clear:both" />
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+<script>
+var navigation = responsiveNav("#site-nav");
+</script>
+
+
+  </body>
+</html>

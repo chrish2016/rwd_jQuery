@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter 5 - Foresight.js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="js/foresight.min.js"></script>
+
+  <style type="text/css">
+    body{text-align: center; background:#DDD; }
+    body:before { content: "small"; }
+    .fs-img { width:100%; font-family: 'image-set(url(-small|-small-2x) 2x high-bandwidth)'; display:none; }
+
+    @media (min-width:400px) {
+      body:before { content: "medium"; }
+      .fs-img { font-family: 'image-set(url(-small|-medium), url(-small|-medium-2x) 2x high-bandwidth)'; }
+    }
+    @media (min-width:800px) {
+      body:before { content: "large"; }
+      .fs-img { font-family: 'image-set(url(-small|-large), url(-small|-large-2x) 2x high-bandwidth)'; max-width:100%; }
+    }
+  </style>
+
+</head>
+<body>
+
+  <img data-src="images/castle-small.jpg" data-width="320" data-height="213" class="fs-img">
+  <noscript>
+    <img src="images/castle-small.jpg">
+  </noscript>
+
+</body>
+</html>

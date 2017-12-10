@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 3 - Top Nav</title>
+  <style type="text/css">
+  /* mobile-first */
+  #site-nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  #site-nav li {
+    display: inline-block;
+    margin: 0 5%;
+    line-height: 1.5;
+  }
+  #logo {
+    text-align: center;
+    clear: both;
+  }
+  /* desktop */
+  @media only screen and (min-width: 768px) {
+   #site-nav ul {
+     width: 70%;
+     float: right;
+   }
+   #logo {
+     float: left;
+     width: 30%;
+     clear: none;
+   }
+  }
+
+  </style>
+</head>
+<body>
+
+<nav id="site-nav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Email</a></li>
+  </ul>
+</nav>
+<h1 id="logo">LOGO</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 11 - Riloadr</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/riloadr.jquery.min.js"></script>
+  <style>
+    * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+    img {border: 4px solid white; outline:1px solid #999;}
+  </style>
+  <!-- Once Riloadr is loaded, set up your image groups -->
+  <script type="text/javascript">
+    var group1 = new Riloadr({
+      breakpoints: [
+        {name: '320', maxWidth: 320}, // iPhone 3
+        {name: '640', maxWidth: 320, minDevicePixelRatio: 2}, // iPhone 4 Retina display
+        {name: '640', minWidth: 321, maxWidth: 640},
+        {name: '1024', minWidth: 641}
+      ]
+    });
+  </script>
+</head>
+<body>
+
+  <h2>Riloadr</h2>
+  <div>
+    <img class="responsive" data-base="images/{breakpoint-name}/" data-src="tahiti.jpg" />
+    <noscript>
+      <img src="images/320/tahiti.jpg" />
+    </noscript>
+  </div>
+  <hr>
+
+</body>
+</html>

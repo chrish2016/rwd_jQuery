@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 11 - Columns</title>
+
+  <link rel="stylesheet" href="css/jquery.columns.css" type="text/css" />
+  <style type="text/css" media="all">
+    body { margin: 0; font-family: Helvetica, Arial; color: #222; background: #e5e5e5; }
+    .responsive { width: 100%; }
+    #slider img { padding: 1em; background: white; box-shadow: 0 2px 5px rgba(0,0,0,.2); }
+    article { padding: 1em 0; }
+  </style>
+</head>
+<body>
+
+  <article id="slider" class="row-1">
+    <div class='col'>
+      <img src="http://fpoimg.com/1344x250" alt="header image" class="responsive" />
+    </div>
+  </article>
+
+  <article id="content-1" class="row-2">
+    <div class='col'>
+      <h2>Maui waui</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class='col'>
+      <h2>Super duper</h2>
+      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a pursue pleasure rationally encounter.</p>
+    </div>
+  </article>
+
+  <article id="content-2" class="row-4">
+    <div class='col'>
+      <h3>Something</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+    </div>
+    <div class='col'>
+      <h3>Nothing</h3>
+      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a 
+    </div>
+    <div class="col">
+      <h3>Everything</h3>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos animi.</p>
+    </div> 
+    <div class="col">
+      <h3>All of it</h3>
+      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you in culpa qui officia deserunt mollitia animi.</p>
+    </div> 
+  </article>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.columns.js"></script>
+  <script>
+    $.columns.quickSetup({
+    	fontSize: [14, 16]
+    });
+    $.columns.setCols({
+      'content-1': [ [1024, 1] ],
+      'content-2': [ [1024, 2] ]
+    });
+  </script>
+
+</body>
+</html>
